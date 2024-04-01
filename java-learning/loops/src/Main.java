@@ -6,8 +6,8 @@ public class Main {
 //        forLoop();
 //        whileLoop();
 //        doWhileLoop();
-//        marks();
-        primeOrNot();
+        marks();
+//        primeOrNot();
 
     }
 
@@ -38,19 +38,25 @@ public class Main {
     }
     private static void marks(){
         Scanner sc = new Scanner(System.in);
-        int inp = sc.nextInt();
-        int sum = 1;
+        int input;
         do{
-            sum++;
-            inp = sc.nextInt();
+            int marks = sc.nextInt();
+            if(marks >= 90 && marks <= 100) {
+                System.out.println("This is Good");
+            } else if(marks >= 60 && marks <= 89) {
+                System.out.println("This is also Good");
+            } else if(marks >= 0 && marks <= 59) {
+                System.out.println("This is Good as well");
+            } else {
+                System.out.println("Invalid");
+            }
+
+
+            System.out.println("Want to continue ? (yes(1) or no(0))");
+            input = sc.nextInt();
+
         }
-        while(inp == 1);
-        if(sum>=90)
-            System.out.print("This Is Good");
-        else if (sum<=89&&sum>=60)
-            System.out.println("This Is also Good");
-        else
-            System.out.println("This Is Good as well");
+        while(input == 1);
     }
 
     private static void primeOrNot(){
