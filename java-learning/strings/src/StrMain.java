@@ -1,4 +1,4 @@
-public class Main {
+public class StrMain {
     public static void main(String[] args) {
 
         String fullName = "tony stark";

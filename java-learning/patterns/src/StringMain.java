@@ -1,4 +1,6 @@
-public class Main {
+package patterns.src;
+
+public class StringMain {
     public static void main(String[] args)
     {
 //        pattern1();

@@ -1,3 +1,5 @@
+package loops.src;
+
 import java.util.Scanner;
 
 public class Main {
